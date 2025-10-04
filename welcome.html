@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Divyanshu's  Tech World</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #000000, #1a237e);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 2.5rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.05); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+  <script>
+    // Redirect after 3.5 seconds to main portfolio page
+    setTimeout(function(){
+      window.location.href = "http://127.0.0.1:5500/portfolio/port.html";
+    }, 3500);
+  </script>
+</head>
+<body>
+  <h1>Welcome to Divyanshu's Tech World</h1>
+</body>
+</html>

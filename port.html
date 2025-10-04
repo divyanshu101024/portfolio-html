@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divyanshu Choudhary - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(120deg, #1e3c72, #2a5298);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: slideUp 1.5s ease;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #ff9800;
+      padding-left: 10px;
+    }
+    ul {
+      list-style: none;
+    }
+    ul li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #ffcc70;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #e68900;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 8px 15px 0 0;
+      color: #ffcc70;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      margin-top: 30px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideUp {
+      from {transform: translateY(40px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Divyanshu Choudhary</h1>
+    <p>Aspiring Full Stack Developer | Computer Science Student</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a CSE student passionate about web development and blockchain. I have hands-on experience with HTML, CSS, and JavaScript, and I am currently learning MERN stack. I aim to secure an internship by December 2025 while building impactful projects.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>C, C++, Python</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React.j</li>
+      <li>public speaking</li>
+      <li>problem solving</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Sasta Bajar Index Page</h3>
+        <p>E-commerce style web interface.</p>
+        <a href="http://127.0.0.1:5500/sasta%20bajar/index.html" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Herbal Web Page</h3>
+        <p>Frontend with backend integration.</p>
+        <a href="http://127.0.0.1:5500/herbal%20pharma/animatio.html" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Instagram Login Page Clone</h3>
+        <p>UI clone of Instagram login screen.</p>
+        <a href="http://127.0.0.1:5500/insta%20page/index.html" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>Basic calculator using HTML, CSS, JS.</p>
+        <a href="http://127.0.0.1:5500/calculator/calindex.html" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>to-do list</h3>
+        <p>Frontend app </p>
+        <a href="http://127.0.0.1:5500/to-dolist/todo.html" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li>2 months training: Learned HTML, CSS, JavaScript</li>
+      <li>3 months corporate experience at FiveS Digital as Data Annotator (Non-Tech role)</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <a href="dc5913290@gmail.com">📧 Email</a>
+    <a href="https://linkedin.com/in/divyanshu-choudhary-722033328" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com/divyanshu101024" target="_blank">💻 GitHub</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Divyanshu Choudhary. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
